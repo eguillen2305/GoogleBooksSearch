@@ -2,6 +2,7 @@
   "name": "googlebookssearch",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
   "engines": {
     "node": "14.8.0",
     "npm": "6.14.7"
@@ -13,22 +14,21 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
+    "express": "^4.17.1",
     "gh-pages": "^3.1.0",
     "git-hooks": "^1.1.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.3",
-    "serve": "^11.3.2"
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
+    "start": "react-scripts start",
     "dev": "react-scripts start",
-    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build",
     "predeploy": "npm run build",
-   "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
