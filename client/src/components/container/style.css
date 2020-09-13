@@ -1,0 +1,11 @@
+.container {
+    padding-top: 30px;
+    background: rgb(230, 240, 243);
+    flex-flow: row wrap;
+    padding-bottom: 30px;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: auto;
+    height: 100%;
+    display: flex;
+}
